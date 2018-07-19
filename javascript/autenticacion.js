@@ -26,4 +26,31 @@ jQuery(document).ready(function($){
 				});
 			};
 		})
+
+	$('.registrate').on(
+		'submit',
+		function(e){
+			e.preventDefault();
+
+			var email = $('.registrate .email').val();
+			var password = $('.registrate .password').val();
+
+			if(!email) {
+				alert('debe ingresar un correo');
+			}else if(!password){
+				alert('debe ingresar una contraseña');
+			}else{
+
+				firebase
+				.auth()
+				.createUserWithEmailAndPassword(email, password)
+				.then(function() {
+					alert('creastes un nuevo usuario');
+					console.log(email);
+				})
+				.catch(function(error) {
+					alert('debes de nuevo');
+				});
+			};
+		})
 });

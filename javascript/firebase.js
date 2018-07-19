@@ -1,11 +1,11 @@
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyBX0-sq4_BJEtji9wBXqtfFlfxhSXP4PyY",
-    authDomain: "chat-ac687.firebaseapp.com",
-    databaseURL: "https://chat-ac687.firebaseio.com",
-    projectId: "chat-ac687",
-    storageBucket: "chat-ac687.appspot.com",
-    messagingSenderId: "1063673934533"
+    apiKey: "AIzaSyCpCetj4GYrpToBT7CPjJlOxhG3RckTpkI",
+    authDomain: "horario-personalizado.firebaseapp.com",
+    databaseURL: "https://horario-personalizado.firebaseio.com",
+    projectId: "horario-personalizado",
+    storageBucket: "",
+    messagingSenderId: "82548544996"
   };
   firebase.initializeApp(config);
 
