@@ -21,4 +21,19 @@ ul {
 .btn {
 	text-decoration: none;
 	color: black;
+    background-color: #9E9FAB;
+}
+ 
+body {
+    background-image: url(../1.jpg);
+}
+
+.center{
+    color:#fff;
+    text-align: center;
+}
+
+.peque{
+    width: 700px;
+    margin: 0 auto;
 }
