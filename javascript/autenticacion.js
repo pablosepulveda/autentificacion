@@ -18,6 +18,8 @@ jQuery(document).ready(function($){
 				.signInWithEmailAndPassword(email, password)
 				.then(function() {
 					alert('bienvenido');
+					window.location.href = ("calendario.html")
+
 				})
 				.catch(function(error) {
 					alert('no eres bienvenido');
@@ -31,7 +33,7 @@ jQuery(document).ready(function($){
 		function(e){
 			e.preventDefault();
 
-			var email = $('.registro .password').val();
+			var email = $('.registro .email').val();
 			var password = $('.registro .password').val();
 
 			if(!email) {
@@ -44,11 +46,15 @@ jQuery(document).ready(function($){
 				.auth()
 				.createUserWithEmailAndPassword(email, password)
 				.then(function() {
-					alert('creastes un nuevo usuario');
-					console.log(email);
+					alert("creaste un usuario");
+					window.location.href = ("calendario.html")
+
+
+
+
 				})
 				.catch(function(error) {
-					alert('debes de nuevo');
+					alert("algo salio mal...");
 				});
 			}
 		}
