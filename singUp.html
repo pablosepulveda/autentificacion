@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>registrate</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css"  href='css/style.css' />
+    <meta charset="utf-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+	<link rel="stylesheet"  href='css/style.css' />
+<title>registrate</title>
 </head>
 <body>
 	<form action="#" class="registro">
@@ -19,24 +20,28 @@
                     <div class="col-md-12">
                     <label for="correo">ingresa tu correo</label></div>
                     <div class="col-md-12">
-                    <input type="correo" name="correo" class="correo" placeholder="ejemplo@gmail.com"></div>
+                    <input type="email" name="correo" class="email" placeholder="ejemplo@gmail.com"></div>
                     <div class="col-md-12">
                     <label for="confirmar tu correo">confirmar tu correo</label></div>
                     <div class="col-md-12">
-                    <input type="confirmar tu correo" name="confirmar tu correo" placeholder="ejemplo@gmail.com"></div>
+                    <input type="email" name="confirmar tu correo" placeholder="ejemplo@gmail.com"></div>
                     <div class="col-md-12">
                     <label for="contrase&ntilde;a">ingresar tu contrase&ntilde;a</label></div>
                     <div class="col-md-12">
-                    <input type="contrase&ntilde;a" name="contrase&ntilde;a" class="contrase&ntilde;a" placeholder="contrase&ntilde;a"></div>
+                    <input type="password" name="contrase&ntilde;a" class="password" placeholder="contrase&ntilde;a"></div>
                     <div class="col-md-12">
                     <label for="confirmar contrase&ntilde;a">Confirmar tu contrase&ntilde;a</label></div>
                     <div class="col-md-12">
-                    <input type="confirmar contrase&ntilde;a" name="confirmar contrase&ntilde;a" placeholder="contrase&ntilde;a"></div>
+                    <input type="password" type="password" name="confirmar contrase&ntilde;a" placeholder="contrase&ntilde;a"></div>
                     </div>
                     <footer>
-                    <div class="card-footer">
+                    <div class="card-footer">           
                     <button type="submit">Sign Up</button></div>
 								</div>
 							</form>
+                                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                                <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+                                <script src="javascript/firebase.js"></script>
+                                 <script src="javascript/autenticacion.js"></script>
 						</body>
 						</html>

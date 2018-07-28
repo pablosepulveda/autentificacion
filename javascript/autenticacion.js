@@ -5,9 +5,7 @@ jQuery(document).ready(function($){
 			e.preventDefault();
 
 			var email = $('.login .email').val();
-			alert(email); 
 			var password = $('.login .password').val();
-			alert(password);
 
 			if(!email) {
 				alert('debe ingresar un correo');
@@ -24,16 +22,17 @@ jQuery(document).ready(function($){
 				.catch(function(error) {
 					alert('no eres bienvenido');
 				});
-			};
-		})
+			}
+		}
+		);	
 
-	$('.registrate').on(
+	$('.registro').on(
 		'submit',
 		function(e){
 			e.preventDefault();
 
-			var email = $('.registrate .email').val();
-			var password = $('.registrate .password').val();
+			var email = $('.registro .password').val();
+			var password = $('.registro .password').val();
 
 			if(!email) {
 				alert('debe ingresar un correo');
@@ -51,6 +50,7 @@ jQuery(document).ready(function($){
 				.catch(function(error) {
 					alert('debes de nuevo');
 				});
-			};
-		})
-});
+			}
+		}
+		);
+});		
